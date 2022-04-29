@@ -11,7 +11,9 @@ LOGIN_PRESETS = [
                 auth_type="shibboleth", auth_data={
                     "login_url": "https://studip.uni-passau.de/studip/index.php?again=yes&sso=shib",
                     "sso_post_url": "https://studip.uni-passau.de/Shibboleth.sso/SAML2/POST"
-                })
+                }),
+    LoginPreset(name="Hamburg University of Technology (TUHH)", base_url="https://e-learning.tuhh.de/studip/index.php?again=yes",
+                auth_type="general", auth_data={}),
 ]
 AUTHENTICATION_TYPES = {"general": GeneralLogin,
                         "shibboleth": ShibbolethLogin}
